@@ -25,6 +25,7 @@ virtual_server 172.22.3.103 80 {
         nat_mask 255.255.255.0   
         persistence_timeout 0    
         protocol TCP                          
+        
         real_server 172.22.3.101 80 {    #真实服务的IP 
                 weight 1        #配置加权轮询的权重             
                 TCP_CHECK {                     
