@@ -36,7 +36,7 @@ virtual_server 172.22.3.103 80 {   #设置虚拟服务器，需要指定虚拟IP
                 }
         }
         real_server 172.22.3.102 80 {
-                weight 2
+                weight 1
                 TCP_CHECK {
                         connect_timeout 10
                         nb_get_retry 3
