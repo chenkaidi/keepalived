@@ -2,7 +2,7 @@ global_defs {
 #   notification_email {             
 #   }
 #   smtp_connect_timeout 30
-        router_id LVS_DEVEL             
+        router_id LVS_02            
 }
 vrrp_instance VI_1 {            
         state BACKUP    #配置LVS是主机的状态        
