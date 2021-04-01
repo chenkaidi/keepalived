@@ -2,7 +2,7 @@ global_defs {
 #   notification_email {             
 #   }
 #   smtp_connect_timeout 30
-        router_id LVS_DEVEL    #表示运行keepalived服务器的一个标识。发邮件时显示在邮件主题的信息
+        router_id LVS_01    #表示运行keepalived服务器的一个标识。发邮件时显示在邮件主题的信息
 }
 vrrp_instance VI_1 {            
         state MASTER    #指定keepalived的角色，MASTER表示此主机是主服务器，BACKUP表示此主机是备用服务器       
