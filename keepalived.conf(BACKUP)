@@ -20,7 +20,7 @@ vrrp_instance VI_1 {
 }
 virtual_server 172.22.3.103 80 {
         delay_loop 6           
-        lb_algo wrr            
+        lb_algo rr            
         lb_kind DR         #使用LVSDR模式                 
         nat_mask 255.255.255.0   
         persistence_timeout 0    
