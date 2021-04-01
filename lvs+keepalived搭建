@@ -183,8 +183,13 @@ virtual_server 172.22.3.103 80 {
 systemctl enable keepalived
 systemctl start  keepalived
 
+4.设置lvs的超时时间，时间为秒
+ipvsadm -L --timeout
+如果时间较大，可是设置较小
+ipvsadm --set 1 2 1
 
-4.LVS主备测试
+
+5.LVS主备测试
 master节点：
 [root@172-22-3-101 keepalived]# ip  a
  eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
